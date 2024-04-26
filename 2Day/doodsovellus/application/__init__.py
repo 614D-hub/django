@@ -9,7 +9,11 @@ Python 将每个文件夹视为一个模块，
 文件夹application中文件的内容__init__.py
 """
 from flask import Flask
+from flask_bootstrap import Bootstrap
 app = Flask(__name__)
+Bootstrap(app)
+
+
 
 
 from flask_sqlalchemy import SQLAlchemy
